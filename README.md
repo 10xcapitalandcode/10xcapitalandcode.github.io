@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Mishra - FS Transformation Leader</title>
-    <meta name="description" content="Abhinav Mishra · FS Transformation Leader. I architect, build and modernize enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation towards AI-native target operating models for Financial Services.">
+    <meta name="description" content="Abhinav Mishra · FS Transformation Leader. I architect, build and modernise enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation towards AI-native target operating models for Financial Services.">
     <style>
         :root {
             /* Dark Theme */
@@ -410,7 +409,9 @@
 
     <nav>
         <div class="nav-container">
-            <div class="nav-brand"><a href="#top">Abhinav Mishra</a></div>
+            <div class="nav-brand">
+                <a hrhef="#top">Abhinav Mishra</a>
+            </div>
             <div class="nav-controls">
                 <div class="nav-links">
                     <a href="#modernizing">Modernizing</a>
