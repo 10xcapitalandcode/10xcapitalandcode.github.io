@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Mishra - FS Transformation Leader</title>
+    <meta name="description" content="Abhinav Mishra · FS Transformation Leader. I architect, build and modernise enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation towards AI-native target operating models for Financial Services.">
     <style>
         :root {
             /* Dark Theme */
