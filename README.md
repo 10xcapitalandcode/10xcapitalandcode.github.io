@@ -410,7 +410,7 @@
     <nav>
         <div class="nav-container">
             <div class="nav-brand">
-                <a hrhef="#top">Abhinav Mishra</a>
+                <a href="#top">Abhinav Mishra</a>
             </div>
             <div class="nav-controls">
                 <div class="nav-links">
