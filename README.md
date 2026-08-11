@@ -1,4 +1,3 @@
-# 10xcapitalandcode.github.io
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
