@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Mishra - FS Transformation Leader</title>
-    <meta name="description" content="Abhinav Mishra · FS Transformation Leader. I architect, build and modernise enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation towards AI-native target operating models for Financial Services.">
+    <meta name="description" content="Abhinav Mishra · FS Transformation Leader. I architect, build and modernise enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation journey towards AI-native products and target operating models for Financial Services.">
     <style>
         :root {
             /* Dark Theme */
@@ -132,6 +132,21 @@
 
         [data-theme="dark"] .sun-icon { display: none; }
         [data-theme="light"] .moon-icon { display: none; }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn svg {
+            width: 24px;
+            height: 24px;
+        }
 
         /* Layout constraints */
         main {
@@ -393,9 +408,32 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .nav-controls {
+                gap: 1rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
             .nav-links {
                 display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--nav-bg);
+                backdrop-filter: blur(12px);
+                padding: 1.5rem 2rem;
+                border-bottom: 1px solid var(--border-color);
+                gap: 1.5rem;
             }
+
+            .nav-links.active {
+                display: flex;
+            }
+
             .grid-2 {
                 grid-template-columns: 1fr;
             }
@@ -420,6 +458,7 @@
                     <a href="#background">Background</a>
                     <a href="#contact">Contact</a>
                 </div>
+
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
                     <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -436,6 +475,15 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -444,7 +492,7 @@
         <header>
             <span class="hero-tag">Transformation & Innovation</span>
             <h1>Modernizing what exists. <span>Transforming the future of Financial Services.</span></h1>
-            <p class="hero-desc">I architect, build and modernise enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation towards AI-native target operating models for global banks, asset & wealth managers, insurance, financial market infrastructure and FinTech.</p>
+            <p class="hero-desc">I architect, build and modernise enterprise-scale product platforms, execute run-the-bank operational excellence, and enable transformation roadmap towards AI-native products and target operating models for global banks, asset & wealth managers, insurance, financial market infrastructure and FinTech.</p>
 
             <div class="metrics-grid">
                 <div class="metric">
@@ -457,7 +505,7 @@
                 </div>
                 <div class="metric">
                     <div class="metric-value">US$15M</div>
-                    <div class="metric-label">AI Investment Capacity</div>
+                    <div class="metric-label">Productivity-led Capacity Created</div>
                 </div>
                 <div class="metric">
                     <div class="metric-value">20 years</div>
@@ -470,17 +518,17 @@
             <div class="section-intro">
                 <span class="section-tag">Legacy Modernization</span>
                 <h2>Modernizing trillion-dollar financial systems.</h2>
-                <p>Driving the modernization of legacy financial markets and securities platforms at the world's most complex institutions, setting the foundation for AI enablement and immense operational savings.</p>
+                <p>Driving the modernization of legacy financial markets and securities platforms at the world's most complex institutions, setting the foundation for AI enablement, business growth, immense operational savings and risk resilience.</p>
             </div>
 
             <div class="grid-2">
                 <div class="card">
-                    <h3>Enterprise Securities Platforms</h3>
+                    <h3>Global Markets and Securities Platforms</h3>
                     <p>Modernized and rationalized core legacy platforms across tier-one global banking institutions.</p>
                     <ul>
-                        <li><strong>JPMorgan:</strong> Athena and Evolution platforms.</li>
-                        <li><strong>Bank of America:</strong> Quartz platform.</li>
-                        <li><strong>Standard Chartered:</strong> Sabre and Cortex platforms.</li>
+                        <li><strong>Bank of America:</strong> Quartz platform. As APAC Product Owner and Quant Lead, I was accoutable for APAC technology and operations for the bank's proprietary cross-asset trading, pricing, and risk management platform, operational workflows and regulatory reporting.</li>
+                        <li><strong>JPMorgan:</strong> Athena and Evolution platforms. As Global Product Owner, led global cross-functional teams to deliver cross-asset platforms for pre-trade & post-trade client solutions.</li>
+                        <li><strong>Standard Chartered:</strong> Sabre and Cortex platforms. As Global Product Manager, I held end-to-end product management ownership for multiple transformation initiatives under the bank's proprietary cross-asset trading, pricing and risk ecosystem, driving business alignment across front, middle, and back-office stakeholders.</li>
                     </ul>
                 </div>
                 <div class="card">
@@ -488,8 +536,8 @@
                     <p>Delivering architectural consolidation that translates directly to the bottom line.</p>
                     <ul>
                         <li><strong>Unprecedented Scale:</strong> Supported over US$30Tn in client assets and US$20Bn in revenue.</li>
-                        <li><strong>Billion-Dollar Impact:</strong> Created a path for up to US$1bn savings through operational efficiencies.</li>
-                        <li><strong>Value Drivers:</strong> Achieved through process simplification, AI enablement, and application platform rationalization.</li>
+                        <li><strong>Billion-Dollar Impact:</strong> Created a path for up to US$1bn savings through operational efficiencies. This enabled the business to self-fund transformation initiatives across client expeirence, business growth, AI transformation and platform investments algined to strategic ambition. </li>
+                        <li><strong>Value Drivers:</strong> Achieved through process simplification, AI enablement, application portfolio rationalization and people-centered target operating model transformation.</li>
                     </ul>
                 </div>
             </div>
@@ -504,21 +552,22 @@
 
             <div class="grid-2">
                 <div class="card">
-                    <h3>Value3 & algoCRED</h3>
-                    <p>Built algoCRED as an AI-platform for independent, predictive, and automated credit ratings.</p>
+                    <h3>Value3 (AI FinTech - B2B SaaS)</h3>
+                    <p>Built algoCRED as an AI-native platform for independent, predictive, and automated credit risk intelligence for asset & wealth managers.</p>
                     <ul>
-                        <li><strong>Market Intelligence:</strong> Delivering investment research and portfolio risk intelligence for asset and wealth managers in both public and private markets.</li>
-                        <li><strong>Award-Winning Excellence:</strong> Received Best FinTech in Capital Markets award across Singapore, India, Switzerland, and the UK.</li>
-                        <li><strong>Enterprise Adoption:</strong> Adopted as the core AI platform driving a regulated credit rating agency in Europe and by a leading Asset Manager in Singapore.</li>
+                        <li><strong>Market Intelligence:</strong> Delivering credit ratings, investment research and portfolio risk intelligence for asset and wealth managers in both public and private markets.</li>
+                        <li><strong>Award-Winning Excellence:</strong> Received Best FinTech in Capital Markets Award from industry bodies across Singapore, India, Switzerland, and the UK.</li>
+                        <li><strong>Enterprise Adoption:</strong> Adopted as the core AI platform for credit intelligence by a leading Asset Manager in Singapore and a regulated credit rating agency in Europe.</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h3>Enterprise AI Advisory</h3>
-                    <p>Advising major financial institutions' leadership on comprehensive Enterprise AI transformation.</p>
+                    <p>Advising major financial institutions' leadership on outcomes-driven comprehensive Enterprise AI transformation across complex customer value chain.</p>
                     <ul>
                         <li><strong>Outcomes-Led Approach:</strong> Focusing on measurable ROI when transforming legacy processes into highly efficient agentic workflows.</li>
-                        <li><strong>Agnostic Architecture:</strong> Designing target ecosystems that remain both LLM and cloud agnostic for long-term resilience.</li>
-                        <li><strong>Value-Chain Integration:</strong> Deploying AI seamlessly across the entire customer value chain to enhance user experience and backend efficiency.</li>
+                        <li><strong>Value-Chain Integration:</strong> Deploying AI seamlessly across the entire customer value chain and process workflows to enhance user experience and operational efficiency.</li>
+                        <li><strong>LLM and Cloud-agnostic Architecture:</strong> Designing target ecosystems that remain both LLM and cloud agnostic for long-term resilience.</li>
+
                     </ul>
                 </div>
             </div>
@@ -526,19 +575,19 @@
 
         <section id="transformation">
             <div class="section-intro">
-                <span class="section-tag">Outcome-based Enterprise Transformation across Customer Value Chain</span>
+                <span class="section-tag">Enterprise Transformation</span>
                 <h2>Re-architecting the operating model for scale.</h2>
-                <p>Leading strategic operational shifts from the boardroom to the technology stack. Enabling thorough diagnostics to rebuild the target operating model for global markets.</p>
+                <p>Leading strategic operational shifts from the boardroom to the technology stack. Enabling thorough diagnostics to rebuild the target operating model for global business and operations with a business outcomes-led approach.</p>
             </div>
 
             <div class="grid-2">
                 <div class="card">
                     <h3>Discovery & Diagnostics</h3>
-                    <p>Establishing a data-driven baseline before executing transformation, ensuring precision in strategy.</p>
+                    <p>Establishing a data-driven baseline before executing transformation, ensuring precision in strategy and alignment with strategic ambition and target business outcomes.</p>
                     <ul>
                         <li><strong>Operating Model Maturity:</strong> Comprehensive assessments to benchmark current-state enterprise architecture.</li>
                         <li><strong>Data Maturity Assessment:</strong> Evaluating data health to enable downstream AI and operational strategies.</li>
-                        <li><strong>Process Diagnostics:</strong> Pinpointing bottlenecks, historically improving Banking Operations Productivity by up to 30% within 12 months.</li>
+                        <li><strong>Process Diagnostics:</strong> Pinpointing bottlenecks, historically improving BAU Workforce Productivity by up to 30% within 12 months, across Front-office and Middle-office.</li>
                     </ul>
                 </div>
                 <div class="card">
@@ -546,13 +595,12 @@
                     <p>Designing the future state of enterprise banking products and operations, integrating modern data strategies and Agentic AI for scalability and decision support.</p>
                     <ul>
                         <li><strong>Zero-Based Design:</strong> Rethinking workflows via zero-based process redesign and comprehensive work redesign.</li>
-                        <li><strong>AI Readiness:</strong> Establishing robust data strategies to ensure systems are primed for AI adoption.</li>
-                        <li><strong>Process, Risk and Controls Taxonomy:</strong> Utilizing comprehensive industry taxonomy blueprints to guide structural transitions and transformation roadmap.</li>
+                        <li><strong>AI Readiness:</strong> Establishing robust data strategies to ensure existing systems are primed for AI adoption.</li>
+                        <li><strong>Process, Risk and Controls Taxonomy:</strong> Utilizing comprehensive industry taxonomy blueprints to guide structural transitions and transformation roadmap while embedding risk controls by design.</li>
                     </ul>
                 </div>
             </div>
         </section>
-
 
         <section id="background">
             <div class="section-intro">
@@ -565,7 +613,7 @@
                     <div class="timeline-item">
                         <div class="timeline-date">JPM, BofA, SCB</div>
                         <div class="timeline-title">Institutional Builder and Operator</div>
-                        <div class="timeline-subtitle">Held senior accountability for architecting, building and scaling client-facing product platforms for cross-asset trading, pricing, risk, prime brokerage, and post-trade solutions supporting >US$30Tn in client assets and US$20Bn in global revenue, delivering >US$1Bn in structural efficiencies.</div>
+                        <div class="timeline-subtitle">Held senior accountability for architecting, building and scaling client-facing product platforms for cross-asset trading, pricing, risk, prime brokerage, and post-trade solutions supporting &gt;US$30Tn in client assets and US$20Bn in global revenue, delivering &gt;US$1Bn in structural efficiencies.</div>
                     </div>
 
                     <div class="timeline-item">
@@ -587,7 +635,7 @@
                         <li><strong>Education:</strong> Master of Science in Risk Management from New York University (NYU); Bachelor of Engineering in Information Technology from the University of Mumbai.</li>
                         <li><strong>Industry Recognition:</strong> Recognised amongst Top Asia FinTech Leaders by the Singapore FinTech Association.</li>
                         <li><strong>Grants & Innovation:</strong> Recipient of the AIDA Grant from the Monetary Authority of Singapore (MAS) for Applied AI in Financial Services.</li>
-                        <li><strong>Network & Mentorship:</strong> Backed and mentored by prominent industry leaders, including executive sponsorship from angel investor Hsieh Fu Hua and leading academecians like <a href="https://profiles.imperial.ac.uk/m.kacperczyk">Prof. Marcin Kacperczyk</a> from Imperial College London and <a href="https://www.stern.nyu.edu/faculty/bio/thomas-pugel">Prof. Tom Pugel</a> from NYU Stern School of Businenss.</li>
+                        <li><strong>Network & Mentorship:</strong> Backed and mentored by prominent industry leaders, including executive sponsorship from angel investor Hsieh Fu Hua and leading academecians like <a href="https://profiles.imperial.ac.uk/m.kacperczyk">Prof. Marcin Kacperczyk</a> from Imperial College London and <a href="https://www.stern.nyu.edu/faculty/bio/thomas-pugel">Prof. Tom Pugel</a> from NYU Stern School of Business.</li>
                         <li><strong>Speaking Engagements and Thought Leadership:</strong> Regular speaker on Financial Markets Valuation & Risk Modelling, and Applied AI in Financial Services at industry conferences and FinTech ecosystem.</li>
                     </ul>
                 </div>
@@ -630,6 +678,21 @@
 
                 htmlElement.setAttribute('data-theme', newTheme);
                 localStorage.setItem('theme', newTheme);
+            });
+
+            // Mobile menu toggle logic
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when a navigation link is clicked
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
             });
         });
     </script>
